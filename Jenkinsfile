@@ -1,12 +1,15 @@
-pipeline {                                     
-    agent any                                 
-    environment {                              
-        PATH = "/opt/maven/bin:$PATH"          
-    }                                          
-    
-        stage('build') {                       
-            steps {                            
-                sh 'mvn clean package'         
-            }                                 
-        }                                     
-    }                                                                                     
+pipeline {
+    agent any
+
+    environment {
+        PATH = "/opt/maven/bin:$PATH"
+    }
+
+    stages {
+        stage('build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+    }
+}
