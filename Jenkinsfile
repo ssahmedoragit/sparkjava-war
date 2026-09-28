@@ -10,5 +10,5 @@ pipeline {                                      // Defines the start of the Jenk
             }                                  // Ends the steps block for 'build' stage
         }                                      // Ends the 'build' stage
     }                                          // Ends the stages block
-}                                              // Ends the pipeline block
+                                               // Ends the pipeline block
 
